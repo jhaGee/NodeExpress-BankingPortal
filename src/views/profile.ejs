@@ -1,12 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+<%- include ('header') %>
+<h1>Profile</h1>
+<div>
+    <p>
+        <h1><%= user.name %> </h1>
+        <h1><%= user.username %> </h1>
+        <h1><%= user.phone %> </h1>
+        <h1><%= user.email %> </h1>
+        <h1><%= user.address %> </h1>
+    </p>
+</div> 
+<a href="/">Back to Account Summary</a>
+<%- include ('footer') %> 

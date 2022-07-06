@@ -24,22 +24,21 @@ app.get("/", (req, res) =>
   res.render("index", { title: "Account Summary", accounts: accounts })
 );
 
-app.get("/savings",(req,res)=>{
-    app.render("account.ejs",{accounts:accounts.saving});
-})
+app.get("/savings", (req, res) => {
+  app.render("account.ejs", { accounts: accounts.saving });
+});
 
-app.get("/checking",(req,res)=>{
+app.get("/checking", (req, res) => {
+  app.render("account.ejs", { accounts: accounts.checking });
+});
 
-})
+app.get("/credit", (req, res) => {
+  app.render("account.ejs", { accounts: accounts.credit });
+});
 
-app.get("/credit",(req,res)=>{
-
-})
-
-app.get("/profile",(req,res)=>{
-    app.render("profile.ejs",{user: users[0]});
-})
-
+app.get("/profile", (req, res) => {
+  app.render("profile.ejs", { user: users[0] });
+});
 
 app.listen(3000, () => {
   console.log("Listening on port 3000");

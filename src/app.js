@@ -14,7 +14,7 @@ const accountData = fs.readFileSync("./src/json/accounts.json", {
   flag: "r",
 });
 const accounts = JSON.parse(accountData);
-const userData = fs.readFileSync("./src/json/user.json", {
+const userData = fs.readFileSync("./src/json/users.json", {
   encoding: "utf8",
   flag: "r",
 });
